@@ -1,3 +1,25 @@
+<div class="modal fade" id="cadastroModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastro</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <label for="recipient-name" class="col-form-label">Nome:</label>
+                <input type="text" class="form-control" id="recipient-name">
+                <label for="recipient-name" class="col-form-label">Email:</label>
+                <input type="text" class="form-control" id="recipient-name">
+                <label for="recipient-name" class="col-form-label">Senha:</label>
+                <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                <button type="button" class="btn btn-primary">Salvar</button>
+            </div>
+        </div>
+    </div>
+</div>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,31 +32,26 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
+
 <body>
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Tech Careers</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#vagas">Vagas</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#cursos">Cursos</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <button class="btn btn-outline-light" type="submit">Área Candidato</button>
-                </form>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#vagas">Vagas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cursos">Cursos</a>
+                </li>
+            </ul>
+            <div class="d-flex">
+                <button type="button" class="btn btn-outline-light" data-bs-toggle="modal"
+                    data-bs-target="#cadastroModal">Área do Candidato</button>
             </div>
         </div>
     </nav>
@@ -79,7 +96,8 @@
                             <h6 class="card-subtitle mb-2 text-body-secondary">HTML, CSS, JavaScript e React</h6>
                             <p class="card-text"><i class="bi bi-square-fill"></i> Tech Solutions Inc.</p>
                             <div class="card-footer text-center">
-                                <button type="button" class="btn btn-primary w-100">Candidatar-se</button>
+                                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                    data-bs-target="#cadastroModal">Começar agora</button>
                             </div>
                         </div>
                     </div>
@@ -92,7 +110,8 @@
                             <h6 class="card-subtitle mb-2 text-body-secondary">Python, SQL e Power BI</h6>
                             <p class="card-text"><i class="bi bi-square-fill"></i> Data Insights</p>
                             <div class="card-footer text-center">
-                                <button type="button" class="btn btn-primary w-100">Candidatar-se</button>
+                                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                    data-bs-target="#cadastroModal">Começar agora</button>
                             </div>
                         </div>
                     </div>
@@ -105,7 +124,8 @@
                             <h6 class="card-subtitle mb-2 text-body-secondary">Figma, UI/UX e Prototipação</h6>
                             <p class="card-text"><i class="bi bi-square-fill"></i> Digital Creations</p>
                             <div class="card-footer text-center">
-                                <button type="button" class="btn btn-primary w-100">Candidatar-se</button>
+                                <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal"
+                                    data-bs-target="#cadastroModal">Começar agora</button>
                             </div>
                         </div>
                     </div>
@@ -133,7 +153,8 @@
                             <span class="badge text-bg-success">Gratuito</span>
                         </div>
                         <div class="card-footer">
-                            <button type="button" class="btn btn-primary">Candidatar-se</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#cadastroModal">Candidatar-se</button>
                         </div>
                     </div>
                 </div>
@@ -146,7 +167,8 @@
                             <span class="badge text-bg-success">Gratuito</span>
                         </div>
                         <div class="card-footer">
-                            <button type="button" class="btn btn-primary">Candidatar-se</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#cadastroModal">Candidatar-se</button>
                         </div>
                     </div>
                 </div>
@@ -162,7 +184,8 @@
                             <span class="badge text-bg-success">Gratuito</span>
                         </div>
                         <div class="card-footer">
-                            <button type="button" class="btn btn-primary">Candidatar-se</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#cadastroModal">Candidatar-se</button>
                         </div>
                     </div>
                 </div>
@@ -175,7 +198,8 @@
                             <span class="badge text-bg-success">Gratuito</span>
                         </div>
                         <div class="card-footer">
-                            <button type="button" class="btn btn-primary">Candidatar-se</button>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#cadastroModal">Candidatar-se</button>
                         </div>
                     </div>
                 </div>
@@ -183,54 +207,96 @@
         </div>
     </section>
     <!-- Carrosel -->
-    <section>
-        <div class="container justify-content-center ">
+    <section class="mb-2">
+        <div class="container mt-5 text-center text-dark bg-body-tertiary">
             <h1>Quem conseguiu emprego</h1>
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner ">
+                <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/pessoas/pessoa1.jpg" class="rounded-circle w-50 " alt="...">
-                        <div class="carousel-caption d-none d-md-block text-dark">
-                            <h5>Ana Silva</h5>
-                            <p class="fst-italic">"Consegui minha primeira vaga como desenvolvedora junior após completar
-                                os
-                                cursos da plataforma!"</p>
-                            <P>Desenvolvedora Front-end na TechSolutions</P>
-                        </div>
+                        <img src="img/pessoas/pessoa1.jpg" class="rounded-circle w-25" alt="...">
+                        <h5>Ana Silva</h5>
+                        <p class="fst-italic">"Consegui minha primeira vaga como desenvolvedora junior após completar
+                            os
+                            cursos da plataforma!"</p>
+                        <P>Desenvolvedora Front-end na TechSolutions</P>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/pessoas/pessoa1.jpg" class="rounded-circle w-50 " alt="...">
-                        <div class="carousel-caption d-none d-md-block text-dark">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
+                        <img src="img/pessoas/pessoa1.jpg" class="rounded-circle w-25" alt="...">
+                        <h5>Lorem</h5>
+                        <p class="fst-italic">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     </div>
                     <div class="carousel-item">
-                        <img src="img/pessoas/pessoa1.jpg" class="rounded-circle w-50 " alt="...">
-
-                        <div class="carousel-caption d-none d-md-block text-dark">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
+                        <img src="img/pessoas/pessoa1.jpg" class="rounded-circle w-25" alt="...">
+                        <h5>Lorem</h5>
+                        <p class="fst-italic">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon bg-primary " aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                <button class="carousel-control-next w-25" type="button" data-bs-target="#carouselExample"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon bg-primary" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
         </div>
+        </div>
     </section>
     <!-- Rodapé -->
+    <section class="container-fluid bg-dark">
+        <div class="row bg-primary text-center">
+            <div class="col-lg m-2 pt-2">
+                <h3>Receba vagas no seu email</h3>
+                <p>Se inscreva e receba as melhores oportunidades</p>
+            </div>
+            <div class="col-lg m-2 pt-2">
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Seu melhor email!</label>
+                </div>
+            </div>
+        </div>
+        <div class=" text-light p-3">
+            <div class="row">
+                <div class="col-lg-3">
+                    <ul>
+                        <h4>Tech Carees</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Aluno Rokston</p>
 
-    <!-- Modais -->
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul>
+                        <h4>Links</h4>
+                        <a class="nav-link active" aria-current="page" href="#vagas">Vagas</a>
+                        <a class="nav-link active" aria-current="page" href="#cursos">Cursos</a>
+                        <a class="nav-link active" aria-current="page" href="">Para empresas</a>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul>
+                        <h4>Contatos</h4>
+                        <p>lorem@techCareers.com</p>
+                        <p>(11) 23333-4444</p>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <ul>
+                        <h4>Redes Sociais</h4>
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-facebook"></i>
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-twitter"></i>
+                    </ul>
+                </div>
 
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
